@@ -1,0 +1,20 @@
+  default: &default
+    adapter: postgresql
+    encoding: unicode
+    pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+    username: <%= ENV["USERNAME"] %>
+    password: <%= ENV["PASSWORD"] %>
+    host: <%= ENV["HOT"] %>
+    socket: /var/run/mysqld/mysqld.sock
+
+  development:
+    <<: *default
+    database: <%= ENV["DATABASE"] %>
+
+  test:
+    <<: *default
+    database: <%= ENV["DATABASE_TEST"] %>
+
+  production:
+    <<: *default
+    database: <%= ENV["DATABASE_PRO DUCTION"] %>

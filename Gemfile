@@ -8,7 +8,7 @@ gem "figaro", "~> 1.1", ">= 1.1.1"
 gem "kaminari"
 gem "bootstrap-kaminari-views"
 gem "puma", "~> 3.11"
-gem "sass-rails", "~> 5.0"
+gem "sass-rails"
 gem "uglifier", ">= 1.3.0"
 gem "turbolinks", "~> 5"
 gem "jbuilder", "~> 2.5"
@@ -32,6 +32,10 @@ gem "social-share-button"
 gem "omniauth"
 gem "omniauth-google-oauth2"
 gem "delayed_job_active_record"
+
+group :production do
+  gem "pg"
+end
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]

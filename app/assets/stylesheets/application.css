@@ -1,6 +1,6 @@
 /*
- *= require_tree .
  *= require_self
+ *= require_tree .
  *= require fontAnwesome/css/fontawesome-all
  *= require fontAnwesome/css/fontawesome-all.min
  *= require fontAnwesome/css/fontawesome
