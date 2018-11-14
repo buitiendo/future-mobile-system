@@ -149,6 +149,7 @@ GEM
       concurrent-ruby (~> 1.0)
     i18n-js (3.1.0)
       i18n (>= 0.6.6, < 2)
+    iconv (1.0.5)
     io-like (0.3.0)
     jbuilder (2.8.0)
       activesupport (>= 4.2.0)
@@ -215,6 +216,7 @@ GEM
       oauth2 (~> 1.1)
       omniauth (~> 1.2)
     orm_adapter (0.5.0)
+    pg (0.21.0)
     public_suffix (3.0.3)
     puma (3.12.0)
     rack (2.0.6)
@@ -238,6 +240,11 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.0.4)
       loofah (~> 2.2, >= 2.2.2)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.5)
+    rails_stdout_logging (0.0.5)
     railties (5.2.1)
       actionpack (= 5.2.1)
       activesupport (= 5.2.1)
@@ -342,6 +349,7 @@ DEPENDENCIES
   highcharts-rails (~> 4.2, >= 4.2.5)
   i18n
   i18n-js
+  iconv (~> 1.0.3)
   jbuilder (~> 2.5)
   jquery-rails
   kaminari
@@ -350,8 +358,10 @@ DEPENDENCIES
   mysql2
   omniauth
   omniauth-google-oauth2
+  pg
   puma (~> 3.11)
   rails (~> 5.2.1)
+  rails_12factor
   ransack
   roo
   roo-xls
@@ -369,4 +379,4 @@ RUBY VERSION
    ruby 2.4.0p0
 
 BUNDLED WITH
-   1.16.6
+   2.0.0.pre.1

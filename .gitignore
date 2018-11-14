@@ -9,26 +9,21 @@
 !/storage/.keep
 /node_modules
 /yarn-error.log
-/public/assets
+# /public/assets
+# /public/uploads/
+# /public/
 .byebug_history
-/config/master.key
-/node_modules
-/yarn-error.log
-/public/assets
-/public/uploads/
-/public/
-.byebug_history
-/config/master.key
+# /config/master.key
 /test/*
-config/settings.local.yml
-config/settings/*.local.yml
-config/environments/*.local.yml
-config/credentials.yml.enc
-config/database.yml
-config/storage.yml
+# config/settings.local.yml
+# config/settings/*.local.yml
+# config/environments/*.local.yml
+# config/credentials.yml.enc
+# config/database.yml
+# config/storage.yml
 /.idea
-/config/application.yml
-/app/assets/images
+# /config/application.yml
+# /app/assets/images
 
 # Ignore application configuration
-/config/application.yml
+# /config/application.yml

@@ -1,0 +1,10 @@
+USERNAME: root
+PASSWORD: "123456789"
+HOT: localhost
+DATABASE: mobiledb
+DATABASE_TEST: mobiledb_test
+DATABASE_PRODUCTION: mobiledb_development
+GOOGLE_CLIENT_ID: "703804959411-34asr7t5lr724ec9rpsg51j0feq6djfr.apps.googleusercontent.com"
+GOOGLE_CLIENT_SECRET: "B35COxeHpa5YjuOSH5q9qFOB"
+EMAIL: "dobt1191@gmail.com"
+PASSWORD_EMAIL: "Tiendo123456789"

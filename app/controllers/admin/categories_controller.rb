@@ -1,6 +1,6 @@
 class Admin::CategoriesController < Admin::BaseController
   before_action :load_category, except: %i(new index create import)
-  before_action :load_list_category, except: %i(index show)
+  before_action :load_list_category, except: %i(index show new create)
   before_action :set_search, only: %i(index import destroy)
 
   def index

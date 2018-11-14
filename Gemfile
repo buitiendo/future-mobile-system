@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "2.4.0"
+gem "iconv", "~> 1.0.3"
 gem "rails", "~> 5.2.1"
 gem "mysql2"
 gem "i18n"
@@ -32,6 +33,11 @@ gem "social-share-button"
 gem "omniauth"
 gem "omniauth-google-oauth2"
 gem "delayed_job_active_record"
+
+group :production do
+  gem "pg"
+  gem "rails_12factor"
+end
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
