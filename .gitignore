@@ -29,6 +29,3 @@ config/storage.yml
 /.idea
 /config/application.yml
 /app/assets/images
-
-# Ignore application configuration
-/config/application.yml
